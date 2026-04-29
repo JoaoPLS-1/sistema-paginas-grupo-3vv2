@@ -9,7 +9,11 @@
  */
 const equipe: { nome: string; github: string }[] = [
   // ====== INÍCIO DA ÁREA DE EDIÇÃO COLABORATIVA ======
-{ nome: "Helena Albano Moreto lopes", github: "HelenaMoreto" },
+
+  { nome: "Helena Albano Moreto lopes", github: "HelenaMoreto" },
+  { nome: "Victor Cássio Carvalho da Silva", github: "VictorCassio" },
+  { nome: "João Pedro Luciano da Silva", github: "Joao-Pedro-Luciano" },
+
   // ====== FIM DA ÁREA DE EDIÇÃO COLABORATIVA ======
 ];
 
@@ -38,10 +42,7 @@ export default function Footer() {
               {equipe.map((membro) => (
                 <li key={membro.github} className="text-sm text-ink-100">
                   <span className="font-medium">{membro.nome}</span>
-                  <span className="text-ink-400">
-                    {" "}
-                    · @{membro.github}
-                  </span>
+                  <span className="text-ink-400"> · @{membro.github}</span>
                 </li>
               ))}
             </ul>
